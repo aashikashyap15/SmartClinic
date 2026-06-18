@@ -11,6 +11,8 @@ import { toast } from 'react-toastify'
 
 const Appointment = () => {
 
+  const navigate = useNavigate()
+
   const {docId} = useParams()
   const {doctors, currencySymbol} = useContext(AppContext)
   const daysOfWeek = ['SUN', 'MON', 'TUES', 'WED', 'THU', 'FRI', 'SAT']
